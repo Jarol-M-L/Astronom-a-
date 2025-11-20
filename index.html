@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Clasificación de Brillo Estelar</title>
+</head>
+<body>
+<p>Nombre Jarol Mamani Larico</p>
+ <h1>AREA DE ASTRONOMIA</h1>
+    <nav>
+      <ul>
+        <li><a href="brillo">Clasificacion del brillo estelar</a></li>
+        <li><a href="Distancia">Distancia de los planetas</a></li>
+        <li><a href="Crater">Cráteres lunares</a></li>
+        <li><a href="celeste">Cuerpos celestes</a></li>
+        <li><a href="Luz">Registro de niveles de luz</a></li>
+      </ul>
+    </nav>
+
+<h2>Clasificación del brillo</h2>
+<input type="number" id="magnitud" placeholder="Ingresa la magnitud">
+<button onclick="clasificar()">Clasificar</button>
+<p id="resultadoBrillo"></p>
+
+<h2>Registrar Distancias de Planetas</h2>
+<label for="numPlanetas">¿Cuántos planetas quieres registrar?</label>
+<input type="number" id="numPlanetas" placeholder="Número de planetas">
+<button onclick="pedirDistancias()">Ingresar distancias</button>
+<div id="distanciasInputs"></div>
+<p id="resultadoPromedio"></p>
+
+<h2>Contar Cráteres Lunares Grandes</h2>
+<label for="diametro">Ingresa el diámetro del cráter (km). Ingresa 0 para terminar:</label>
+<input type="number" id="diametro" placeholder="Diámetro del cráter">
+<button onclick="agregarCrater()">Agregar Cráter</button>
+<p id="resultadoCrater">Cráteres > 50 km: 0</p>
+
+<h2>Identificar Cuerpo Celeste</h2>
+<label for="codigo">Ingresa un código (1-5):</label>
+<input type="number" id="codigo" placeholder="Código">
+<button onclick="identificarCuerpo()">Identificar</button>
+<p id="resultadoCuerpo"></p>
+
+<h2>Registro de Niveles de Luz (lux)</h2>
+<label for="nivelLuz">Ingresa el nivel de luz (lux) o escribe "no" para terminar:</label>
+<input type="text" id="nivelLuz" placeholder="Valor en lux">
+<button onclick="registrarLuz()">Agregar</button>
+<p id="resultadoLuz"></p>
+<script src="script.js"></script>
+</body>
+</html>
